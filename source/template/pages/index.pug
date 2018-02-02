@@ -1,0 +1,24 @@
+extends ../_template
+
+block variables
+  - var title = 'Форма авторизации'
+
+
+block content
+  .wr.index
+    form.index__form#index__form(action="mailer.php",method="post")
+      .index__form__title Форма
+      .index__form__lbls-inps
+        .index__form__box.index__form__box_labels
+          label.index__form__label Имя
+          label.index__form__label Телефон
+        .index__form__box.index__form__box_inputs
+          input.index__form__input#index__form__name(type="text",name="name")
+          input.index__form__input.index__form__input_top10#index__form__phone(type="tel",name="phone")
+      .index__form__label-input
+        .index__form__labels
+          label.index__form__label Эл. почта
+        .index__form__right
+          input.index__form__input#index__form__email(type="email",name="email")
+          button.index__form__button#index__form__button(type="submit",disabled) Отправить
+

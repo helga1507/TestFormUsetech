@@ -1,0 +1,121 @@
+@charset "utf-8"
+@import "helpers/_reset.scss"
+@import "helpers/_respond.scss"
+@import "helpers/_fonts"
+@import "helpers/_mixin"
+$white: #ffffff
+$black: #000000
+
+
+
+// General Style
+*
+  outline: none
+button
+  font: inherit
+img
+  max-width: 100%
+  max-height: 100%
+.bold
+  font-weight: bold
+.text-center
+  text-align: center
+
+.hidden
+  display: none
+
+
+body
+  font-family: 'Calibri'
+  background-color: #fff
+  font-weight: normal
+  font-style: normal
+  color: #000
+  background-color: $white
+  padding: 0 !important
+  font-size: 14px
+
+.wr
+  width: 100%
+  background-repeat: no-repeat
+  background-position: center top
+  z-index: 99
+  margin: 0 auto
+  position: relative
+  overflow: hidden
+  max-width: 1600px
+.block
+  width: 100%
+  position: relative
+  margin: 0 auto
+  +breakpoint(large)
+    padding-left: 10px
+    padding-right: 10px
+    max-width: 980px
+  +breakpoint(small)
+    padding-left: 10px
+    padding-right: 10px
+    max-width: 340px
+
+
+.index
+  min-height: 100vh
+  background-color: #F5F5F5
+  +flex-center-center
+  .index__form
+    +breakpoint(small)
+      width: 310px
+      margin: 0 5px
+    +breakpoint(large)
+      width: 520px
+    &__title
+      font-size: 1.3em
+      font-weight: bold
+    &__lbls-inps,&__label-input
+      +flex-between
+    &__box
+      +flex-column-between
+      padding-top: 10px
+      padding-bottom: 10px
+      &_inputs
+        border: 1px solid #CCCCCC
+        border-radius: 3px
+        background-image: linear-gradient(to top, #E7E7E7, $white)
+        padding-left: 10px
+        padding-right: 10px
+    &__label
+      margin-top: 10px
+      +breakpoint(small)
+        width: 90px
+      +breakpoint(large)
+        width: 150px
+    &__input
+      padding: 3px 5px
+      border: 1px solid #BFBFBF
+      +breakpoint(small)
+        width: 190px
+      +breakpoint(large)
+        width: 300px
+      &.valid
+        border-color:  #92BB41
+      &_top10
+        margin-top: 10px
+    &__label-input
+      margin-top: 10px
+    &__right
+      padding-left: 10px
+      padding-right: 10px
+    &__button
+      color: #2B4600
+      border-radius: 3px
+      padding: 5px 20px
+      margin-top: 15px
+      display: block
+      box-shadow: inset 0px 0px 2px 0px #ffffff
+      &:not([disabled])
+        background-color: #A7D245
+        border: 1px solid #92BB41
+
+
+
+
