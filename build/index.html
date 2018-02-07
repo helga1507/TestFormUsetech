@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Форма авторизации</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <!--link(rel="icon" type="image/png" href="/assets/img/favicon.ico")-->
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css"><link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
+<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+</html>
+<body>
+  <div class="wr index">
+    <form class="index__form" id="index__form" action="mailer.php" method="post">
+      <div class="index__form__title">Форма</div>
+      <div class="index__form__lbls-inps">
+        <div class="index__form__box index__form__box_labels">
+          <label class="index__form__label">Имя</label>
+          <label class="index__form__label">Телефон</label>
+        </div>
+        <div class="index__form__box index__form__box_inputs">
+          <input class="index__form__input" id="index__form__name" type="text" name="name">
+          <input class="index__form__input index__form__input_top10" id="index__form__phone" type="tel" name="phone">
+        </div>
+      </div>
+      <div class="index__form__label-input">
+        <div class="index__form__labels">
+          <label class="index__form__label">Эл. почта</label>
+        </div>
+        <div class="index__form__right">
+          <input class="index__form__input" id="index__form__email" type="email" name="email">
+          <button class="index__form__button" id="index__form__button" type="submit" disabled>Отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="assets/js/foundation.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>

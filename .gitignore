@@ -31,7 +31,6 @@ Thumbs.db
 .idea
 .svn
 dist
-build
 php
 
 # Node.JS
